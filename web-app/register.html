@@ -1,0 +1,26 @@
+<html>
+
+<head>
+<title>GCM Registration V2.0</title>
+<script src="register.js"></script>
+<script src="CryptoJS v3.1.2/rollups/hmac-sha256.js"></script>
+<script src="CryptoJS v3.1.2/components/enc-base64-min.js"></script>
+</head>
+
+<body>
+    Sender ID:<br />857257490917<br />
+    <button id="registerWithGCM">Register with GCM</button>
+    <br />
+    <br />
+    <br />
+    Notification Hub Name:<br />Test_notification_hub<br /><br />
+    Connection String:<br />
+    Endpoint=sb://pushcrm.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=AV+PGhy9RVoaFj++NdRPaysMvz7sekjH90dTx70kcHU=
+    <br />
+    <button id="registerWithNH" disabled="true">Register with Azure Notifications Hub</button>
+    <br />
+    <br />
+<textarea id="console" type="TEXT" readonly style="width:500px;height:200px;background-color:#e5e5e5;padding:5px"></textarea>
+</body>
+
+</html>
