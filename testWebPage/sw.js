@@ -20,11 +20,11 @@ self.addEventListener('push', function (event) {
 
         var title = data.notification.title;
         var body = data.notification.body;
-        //var icon = 'https://itiggi.hostronavt.ru/testWebPage/my_beautiful_push_icon.png';
+        var icon = 'https://itiggi.hostronavt.ru/gcm.png';
 
         return self.registration.showNotification(title, {
           body: body,
-          //icon: icon,
+          icon: icon,
           data: {
             url: data.notification.url
           }
